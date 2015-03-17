@@ -46,7 +46,7 @@ Summa:  63       rub
 
 ### до:
 
-[before](https://raw.githubusercontent.com/vstebunov/lua-cv-money-count/master/IMG_20150310_210430.jpg)
+[before](https://github.com/vstebunov/lua-cv-money-count/blob/master/IMG_20150310_210430.jpg)
 
 ### после:
 
