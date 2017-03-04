@@ -78,8 +78,14 @@ function erosion(binary_image, max_col, max_row, struct_elem, smax_col, smax_row
 				local is_equal = true 
 				for m = -1 * cx, 1 * cx do
 					for n = -1 * cy, 1 * cy do
+						if cx + m < 1 then
+							break
+						end
+						if cy + n < 1 then
+							break
+						end
 						if not struct_elem[cx + m] then
-							print(cx + m, cx, m, smax_col)
+							error('empty struct elelment', cx + m, cx, m, smax_col)
 						end
 						if not binary_image[i + m] or binary_image[i + m][j + n] ~= struct_elem[cx + m][cy + n] then
 							is_equal = false 
